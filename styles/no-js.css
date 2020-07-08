@@ -1,0 +1,32 @@
+/*На случий, если js не работает*/
+
+@media (max-width: 768px) {
+    
+/*
+    .menu-open__closed{
+        
+    }
+*/
+    
+    .no-js .menu-open__closed{
+        display: block;
+/*        position: static; Так информация останется в потоке*/
+        top: 0;
+        margin-top: 31%;
+        margin-bottom: -390px;
+/*        Очень странный визуальный эффект для элемента */
+    }
+
+    .no-js main{
+        margin-top: 30%;
+    }
+    
+    
+    .no-js .header-date{
+        margin-top: 162%;
+    }
+    
+    .no-js .weather{
+        margin-top: 160%;
+    }
+}

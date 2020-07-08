@@ -1,0 +1,263 @@
+/*Размер экрана планшета*/
+@media (max-width: 1024px) {
+    .main{
+/*        margin-top: 102px;*/
+        margin-top: 12%;
+        
+    }
+    
+    
+    .column-left {
+        flex-basis: 250px;
+    }
+    
+    .column-center {
+        order: 0;
+        flex-basis: 555px;
+    }
+    
+    .topNews {
+/*        padding-bottom: 137px;*/
+        padding-bottom: 24.5%;
+    }
+    
+    .newslist { 
+/*        width: 462px;*/
+        /*        Возможно стоит увеличить - для покрытия всей страницы*/
+        width: 100%
+    }
+    
+    .column-left {
+        order: 1;
+    }
+    
+    .column-right {
+        order: 1;
+    }
+    
+    .mostReadNews {
+        order: 2;
+        justify-content: center;
+    }
+
+}
+
+
+
+/*Размер экрана мобильника*/
+@media (max-width: 768px) {
+    .main{
+/*        ---------------   */
+        margin-top: 32%;
+    }
+    
+    
+    .column-left {
+        /*растягивание элемента на всю длинну мобильной версии сайта*/
+        flex-basis: 320px;
+        order: 1;
+/*        padding-bottom: 49px;*/
+        padding-bottom: 13%;
+        
+    }
+    
+    .newslist__item {
+/*        width: 320px;*/
+        width: 100%;
+    }
+    
+    .newslist__item:nth-child(2n) {
+        margin-left: 0;
+    }
+    
+    .column-headline {
+        padding-left: 24px;
+    }
+    
+    .news-list {
+        padding-left: 24px;
+    }
+    
+    .news-list__article {
+        margin-bottom: 21px;
+        margin-bottom: 7%;
+        
+    }
+    
+    .news-list .news__props {
+        margin-left: 0; 
+    }
+    
+    .news__props__comments-count {
+        order: 1;
+        margin-right: 84px;
+    }
+    
+    .news-list .news__props__time {
+        margin-right: 5px;
+    }
+    
+    .allNews-link {
+/*        margin-top: 35px;*/
+        margin-top: 11%;        
+        
+        margin-left: 25px;
+/*        padding: 14px 96px;*/
+        padding: 4.5% 96px;
+
+    }
+    
+    
+    /*Правая колонка с рекламой*/
+    .column-right {
+        order: 2;
+/*        margin-top: 51px;*/
+        margin-top: 14%;
+        
+        
+        flex-basis: 100%;
+        
+        
+    /*Для скрола рекламы влево-вправо*/
+        overflow-x: scroll;
+    /*Что бы рекламные банеры не перескакивали на новую строку*/
+        white-space: nowrap;
+        
+        text-align: center;
+
+    }
+    
+    /*Сами рекламные банеры выстраиваем в ряд*/
+    .column-right__image {
+        display: inline-block;
+        margin-left: 25px;
+        width: 250px;
+/*        width: 78.5%;*/
+    }
+    
+    
+    
+    /* Центральна колонка с новостями */
+    .column-center {
+        flex-basis: 320px;
+        margin: 0;
+        order: 0;
+/*        margin-bottom: 65px;*/
+        margin-bottom: 17%;
+        
+    }
+    
+    .topNews {
+        padding-left: 24px;
+        
+/*
+        padding-top: 140px;
+        padding-bottom: 29px;
+*/
+        padding-top: 44%;
+        padding-bottom: 9%;
+    }
+    
+    .topNews__headline {
+        font-size: 22px;
+    }
+    
+    .newslist {
+/*        width: 320px;*/
+        width: 100%;
+        
+/*        margin-top: 30px;*/
+        margin-top: 10%;
+
+    }
+    
+    .newslist__item {
+/*        margin-bottom: 27px;*/
+        margin-bottom: 8%;
+        
+    }
+    
+    .newslist > .newslist__item:nth-last-of-type(2) {
+/*        margin-bottom: 27px;*/
+        margin-bottom: 8%;
+    }
+    
+    .newslist__item__headline {
+        margin-left: 24px;
+        margin-right: 20px;
+/*        margin-top: 10px;*/
+        margin-top: 3%;
+    }
+    
+    .news__props {
+        margin-left: 26px;
+/*        margin-top: 15px;*/
+        margin-top: 4%;
+    }
+    
+    .newslist__item__props {
+        order: 1;
+        margin-right: 133px;
+    }
+    
+    .news__props__time {
+        margin-right: 8px;
+    }
+    
+    
+    
+    /*Самые читаемые новости*/
+    .mostReadNews {
+        order: 2;
+/*        margin-top: 46px;*/
+        margin-top: 13%;
+        
+    }
+    
+    .mostReadNews__topNews {
+/*        width: 320px;*/
+        width: 80%;
+        
+        padding-left: 25px;
+        padding-right: 5px;
+/*        padding-bottom: 47px;*/
+/*        padding-top: 109px;*/
+        padding-bottom: 13%;
+        padding-top: 29%;
+    }
+    
+    .topNews__link {
+/*        margin-top: 17px;*/
+        margin-top: 7%;
+    }
+    
+    
+    
+    .mostReadNews__rightPart {
+        order: 1;
+/*        width: 320px;*/
+        width: 80%;
+    }    
+    
+    .mostReadNews__topNews__paragraph {
+        display: none;
+    }
+    
+    
+    .mostReadNews__list {
+        padding-left: 24px;
+        padding-right: 50px;
+/*        padding-top: 25px;*/
+        padding-top: 9%;
+    }
+    
+    .mostReadNews__item {
+/*        margin-bottom: 22px;*/
+        margin-bottom: 10%;
+
+    }
+    
+    .news__props {
+        margin-left: 25px;
+    }
+}

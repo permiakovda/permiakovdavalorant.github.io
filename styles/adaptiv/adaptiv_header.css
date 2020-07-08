@@ -1,0 +1,356 @@
+/*----------------------------
+
+    Размер экрана планшета
+
+-----------------------------*/
+@media (max-width: 1024px) {
+    .fixed-container {
+/*        max-width: 768px;*/
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .header {
+/*        padding-bottom: 32px;*/
+        padding-bottom: 4%;
+        
+    }
+    
+    .black-bar {      
+        padding-top: 18px;
+        padding-bottom: 19px;
+        margin-bottom: 40px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .header-heading {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .black-bar-date {
+        display: block;
+    }
+    
+    .mainNav_button{
+        display: none;
+    }
+      
+    .citySelection {
+        display: block;
+        
+        margin-left: 15px;
+    }
+    
+    .header-date {
+        display: block;
+        
+        margin-left: 1%;
+        flex-basis: 24%;
+    }
+    
+    .header-date-time {
+        margin-left: 15px;
+    }
+    
+    .weather {
+        display: block;
+        
+        margin-left: 15px;
+        margin-right: 15px;
+        
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .header-search{
+        width: 32%;
+    }
+    
+    .header-search-input {
+        display: inline-block;
+        
+/*        width: 170px;*/
+        width: 81%;
+    }
+    
+    .header-search-button {
+        height: 44px;
+/*        padding: 16px 18px;*/
+        padding: 7% 18px;
+        
+        background-color: inherit;
+        border: 1px solid #f3f3f3;
+    }
+
+    .mainNav {
+        display: block;
+    }
+    
+    .header-nav{
+        text-align: center;
+    }
+    
+    .header-nav-li{
+        margin-bottom: 2%;
+    }
+
+}
+
+
+/*------------------------------
+
+    Размер экрана мобильника
+
+-------------------------------*/
+@media (max-width: 768px) {
+    .fixed-container {
+        min-width: 320px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .header {
+/*        padding-bottom: 8px;*/
+        padding-bottom: 2.8%;
+        padding-bottom: calc(1.4% * 2);
+        
+
+    }
+
+    .header-logo {
+/*        width: 175px;*/
+        width: 100%;
+        
+        order: 1;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
+    .black-bar {      
+        padding: 16px 0;
+        padding-bottom: 18px;
+        margin-bottom: 13px;
+        
+        padding-top: 5%;
+        padding-bottom: 6%;
+        margin-bottom: 4%;
+    }
+
+    .mainNav_button{
+        display: inline-block;
+        order: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 13%;
+        
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header-heading {
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    
+    .black-bar-date {
+        display: none;
+    }
+    
+    .citySelection {
+        display: none;
+    }
+    
+    
+    
+    /*Дата и время визуально за пределми шапки благодоря отрицательного марджина*/
+    .white-bar{
+/*        Отодвигаем границу контейнера, что юы элемены былки как бы за его пределами визуально*/
+/*        margin-bottom: -73px;*/
+        margin-bottom: -23%;
+        
+    }
+    
+    .header-date {
+        order: 3;
+        flex-basis: 55%;
+/*        margin-top: 54px;*/
+        margin-top: 17.5%;
+        
+        margin-left: 4%;
+    }
+    
+    .header-date-time {
+        margin-left: 10.8%;
+    }
+    
+    .weather {
+        order: 4;
+/*        margin-top: 50px;*/
+        margin-top: 16%;
+        
+        margin-right: 5%;
+        
+        flex-basis: 24%;
+        text-align: left;
+    }
+    
+/*    --------------------------------------------------------------------   */
+    
+    .header-logo-flex{
+        flex-basis: 58%;
+    }
+    
+    
+    
+    .header-search{
+        order: 2;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 13%;
+        background: none;
+    }
+    
+    
+    
+    
+    .header-search-input {
+        display: none;
+        
+        
+    }
+    
+    .header-search-button {
+        width: 0;
+        height: 0;
+/*        padding: 13px 21px;*/
+        padding: 29% 20px;
+        
+        border: none;
+        background-color: #fff;
+        background-position: center;
+        
+    }
+
+    
+/*-----------------------------------
+    
+    Навигационное меню меню
+    
+------------------------------------*/
+    
+    .menu-open .menu-open__open{
+        /*меню открыто*/
+        display: block;
+        
+    }
+    
+/*
+    .menu-open .menu-open__closed{
+        мею закрыто
+        display: none;
+    }
+*/
+    
+/*    изменение картнки кнопки*/
+/*
+    .menu-open .mainNav_button_open{
+        background-image: url("../../img/header/NavBar_320_close.png");
+    }
+*/
+    
+    .menu-open .mainNav_button.menu-open__open{
+        background-image: url("../../img/header/NavBar_320_close.png");
+    }
+    
+    
+    
+    .mainNav {
+        display: none;
+        padding: 0px 23px;
+        position: absolute;
+
+/*        margin-top: 2%;*/
+        margin-top: calc((2% + 3em) - (2%)*2);
+        
+        
+        z-index: 1;
+        background: #f9f9f9;
+    }
+    
+    .header-nav {
+/*        display: block;*/
+    }
+    
+    .header-nav-li {
+        width: 100%;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 9.5px 0;
+        padding: 4% 0;
+        
+    }
+    
+    .header-nav-li:last-child{
+        border-bottom: none;
+    }
+    
+    .header-nav-li:after {
+        margin-left: 0;
+        color: none;
+        content: none;
+    }
+    
+    .header-nav__link{
+        font-size: 18px;
+    }
+    
+    .mainNav__button__label {
+        display: inline-block;
+        
+        padding: 14px;
+        background-color: transparent;
+        background-image: url("../../img/header/NavBar_320.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    
+/*-------------------------------
+    
+    раскрытие поисковой формы
+    
+--------------------------------*/
+    
+    .header-search-input__open{
+        display: inline-block;
+/*        width: 253px;*/
+        width: 73%;
+    }
+    
+    .header-search-button__open{
+        height: 44px;
+/*        padding: 16px 18px;*/
+        padding: 6% 18px;
+        
+        background-color: inherit;
+    }
+    
+    .header-search-close{
+        display: none;
+        border: none;
+        background-color: inherit;
+    }
+    
+    .header-search-open{
+        display: inline-block;
+    }
+    
+    
+}
+
+

@@ -1,0 +1,179 @@
+.main{
+    text-align: center;
+}
+
+.content__title{
+    margin: 0;
+    text-align: center;
+    font-size: 54px;
+}
+
+/*
+    "Что я делаю"
+*/
+
+.main__activity{
+    padding-top: 88px;
+    padding-bottom: 102px;
+}
+
+.activity{
+    margin-left: 0;
+    margin-top: 85px;
+    padding-left: 0;
+    margin-bottom: 71px;
+}
+
+.activityItem{
+    list-style-type: none;
+    width: 22%;
+    text-align: center;
+}
+
+/*
+    Отображение разных элементов
+*/
+
+.activityItem:nth-child(2){
+    width: 24%;
+    margin-left: 24px;
+}
+
+.activityItem:nth-child(2) .activityItem__img{
+    width: 29%;
+}
+
+.activityItem:nth-child(3){
+    margin-left: 3px;
+}
+
+.activityItem:nth-child(3) .activityItem__img{
+    width: 29%;
+    padding-top: 4px;
+}
+
+.activityItem:nth-child(4){
+    margin-right: -6px;
+}
+
+.activityItem:nth-child(4) .activityItem__img{
+    width: 29%;
+    padding-top: 4px;
+}
+
+
+.activityItem__img{
+    width: 31%;
+}
+
+.activityItem__info{
+    margin-top: 11px;
+    font-size: 20px;
+    color: #8993ad;
+    line-height: 1.5em;
+}
+
+.activity-more {
+    padding: 19px 59px;
+}
+
+/*
+    Примеры моих работ
+*/
+
+.main__portfolio{
+    padding-top: 89px;
+    padding-bottom: 102px;
+    background-color: #fbfbfb;
+}
+
+.portfolioSwiperWrapper{
+    margin-top: 100px;
+    margin-bottom: 75px;
+    padding: 0;
+}
+
+.portfolioItem{
+    list-style-type: none;
+    width: 31.5%;
+    text-align: center;
+}
+
+.portfolioItem__info{
+    margin-top: 31px;
+    font-size: 20px;
+    color: #8993ad;
+}
+
+.portfolio-more{
+    padding: 19px 65px;
+}
+
+
+/*
+    слайдер
+*/
+
+.portfolioSwiperContainer{
+    position: relative;
+    z-index: 1;
+}
+
+.portfolioSwiperWrapperButtonPrev{
+    position: absolute;
+    top: 32.2%;
+    left: -2.8%;
+    cursor: pointer;
+}
+
+.portfolioSwiperWrapperButtonNext{
+    position: absolute;
+    top: 32.2%;
+    right: -2.8%;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.portfolioSwiperWrapperButtonPrev:after{
+    content: url(../img/main/arrow.png);
+}
+
+.portfolioSwiperWrapperButtonNext:after{
+    content: url(../img/main/arrow.png);
+}
+
+/*
+    градиентный задний фон
+*/
+
+.main__aside{
+    background: linear-gradient(11deg, #ff8f5a 11%, #ff2f96);
+    padding-top: 77px;
+    padding-bottom: 80px;
+}
+
+.aside-container{
+    max-width: 943px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.aside__title{
+    font-size: 45px;
+    color: #fff;
+    text-align: inherit;
+    line-height: 1.3;
+}
+
+.aside__desc{
+    margin-top: 31px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.7;
+    padding-left: 14px;
+}
+
+.aside__desc:before{
+    content: '*';
+    margin-left: -13px;
+}

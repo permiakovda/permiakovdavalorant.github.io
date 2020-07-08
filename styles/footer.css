@@ -1,0 +1,105 @@
+/*
+    Нав меню нижнего колонтитула
+*/
+.footer {
+    padding-top: 77px;
+}
+
+.footer-nav {
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+
+.footer-nav__item {
+    list-style-type: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #8993ad;
+}
+
+/*
+    Телефон и почта
+*/
+
+.footer__contact {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 64px;
+    padding: 0;
+    font-size: 25px;;
+    list-style-type: none;
+}
+
+.contact__tel{
+    margin-bottom: 29px;
+}
+
+.contact__mail{
+    
+}
+
+.contact__tel__bk {
+    background: url(../img/footer/call-answer-svg.svg);
+}
+
+.contact__mail__bk{
+    background: url(../img/footer/envelope-svg.svg);
+}
+
+.contact__tel-mail{
+    padding-left: 56px;
+    background-position: left 18px center;
+    background-repeat: no-repeat;
+    background-size: 7%;
+}
+
+/*
+    Заказ звонка и ссылки на соц сети
+*/
+
+.footer__request{
+    margin-right: 21px;
+    padding: 12px 61px;
+}
+
+.social-group{
+    margin-top: 31px;
+    padding: 0;
+}
+
+.social-group-item{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.social-group-item:first-child{
+    margin-left: 2px;
+}
+
+/*
+    ссылка на соц сети
+*/
+.social-group__icon{
+    color: #b2b9ca;
+}
+
+
+
+
+/*
+    копирайт
+*/
+
+.footer__copyright {
+    margin-top: 61px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    background-color: #31293c;
+    color: #fff;
+}
